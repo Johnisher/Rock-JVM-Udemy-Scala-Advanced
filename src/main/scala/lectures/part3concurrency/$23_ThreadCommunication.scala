@@ -12,7 +12,7 @@ object $23_ThreadCommunication extends App {
     private var value: Int = 0
 
     def isEmpty: Boolean = value == 0
-    def set(newValue: Int) = value = newValue
+    def set(newValue: Int): Unit = value = newValue
     def get: Int = {
       val result = value
       value = 0
@@ -74,3 +74,5 @@ object $23_ThreadCommunication extends App {
   smartProdCons()
 
 }
+
+//note
